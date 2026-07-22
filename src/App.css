@@ -1,0 +1,106 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
+    color: #1f2937;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main application container */
+.App {
+    width: min(90%, 700px);
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.App h1 {
+    margin-top: 0;
+    color: #2563eb;
+    text-align: center;
+}
+
+.App h2 {
+    margin-top: 25px;
+    color: #374151;
+    text-align: center;
+}
+
+/* Search input */
+.App input[type="text"] {
+    width: 100%;
+    margin: 15px 0;
+    padding: 12px 15px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+.App input[type="text"]:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Bootstrap filter dropdown */
+.dropdown {
+    margin-bottom: 20px;
+}
+
+.dropdown-toggle {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Produce list */
+.App ul {
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.App li {
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    background-color: #f3f4f6;
+    border-left: 5px solid #2563eb;
+    border-radius: 7px;
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.App li:hover {
+    background-color: #dbeafe;
+    transform: translateX(5px);
+}
+
+/* Counter buttons */
+.App button {
+    margin: 5px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 7px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.App button:hover {
+    background-color: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+    .App {
+        margin: 20px auto;
+        padding: 20px;
+    }
+}
